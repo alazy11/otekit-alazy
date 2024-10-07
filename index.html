@@ -6,8 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/output.css">
-    <link rel="stylesheet" href="./style/custom.css">
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="./style/output.css">
+<link rel="stylesheet" href="./style/custom.css">
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script type="module" src="./script/home.js" defer></script>
     <title>Document</title>
 </head>
@@ -43,7 +49,7 @@
                               <li><a href="#home" class=" active flex items-center leading-[1] text-[15px] text-white py-[15px] relative list-link-before">الرئيسية</a></li>
                               <li><a href="#about" class="text-[15px] flex items-center leading-[1] text-white py-[15px] relative list-link-before">من نحن</a></li>
                               <li class="relative" id="service" >
-                                <a href="#services" class="text-[15px] text-white py-[15px] relative leading-[1] list-link-before flex items-center gap-0.5">خدماتنا
+                                <a href="./card.html" class="text-[15px] text-white py-[15px] relative leading-[1] list-link-before flex items-center gap-0.5">خدماتنا
                                 <span class="w-5 h-5 block">
                                     <svg width="100%" height="100%" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M6.352 8.752a1.2 1.2 0 0 1 1.696 0L12 12.703l3.952-3.951a1.2 1.2 0 1 1 1.696 1.696l-4.8 4.8a1.2 1.2 0 0 1-1.696 0l-4.8-4.8a1.2 1.2 0 0 1 0-1.696Z" clip-rule="evenodd"></path>
@@ -257,7 +263,7 @@
 
                     </div>
 
-                    <nav class="w-full h-dvh fixed -top-full rtl:right-0 ltr:left-0" id="mobile-nav-active">
+                    <nav class="w-full h-dvh fixed top-[-110%] rtl:right-0 ltr:left-0" id="mobile-nav-active">
                         <ul class="block text-center h-full w-full bg-[#15212a] pt-[80px] px-5 hidden-scroll">
                           <li><a class="active flex items-center justify-center w-full py-[15px] text-gray-500 text-xl font-medium transition-colors" href="#blog">الرئيسية</a></li>
                           <li><a class="flex items-center justify-center w-full py-[15px] text-gray-500 text-xl font-medium transition-colors" href="#portfolio">من نحن</a></li>
@@ -424,7 +430,7 @@
                         </div>
 
                     </div>
-                    <div class="w-[45%] min-991px:w-[40%]">
+                    <div class="w-[60%] min-991px:w-[40%]">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 437.8 437.6" style="enable-background:new 0 0 437.8 437.6;" xml:space="preserve" src="/patterns/emailsync.svg" alt="otek company" loading="lazy">
                                 <style type="text/css">
                                     .emails0{fill:#FFFFFF;}
@@ -480,7 +486,7 @@
 
 
         <!-- section 3 company services  -->
-
+        
         <section class="py-20 px-3 bg-[#f6f6f6] min-h-dvh sm:px-0">
             <div class="container">
                 <div>
@@ -490,77 +496,339 @@
                     </div>
 
                     <div class="services-container">
-                        <a href="#" class="block rounded-2xl bg-white shadow-card">
-                            <div class="w-full p-5 pb-[15px]">
-                                <div class="w-full h-[185px] overflow-hidden m-auto">
-                                    <img src="./images/Static-website-pana.svg" alt="website service" 
-                                    class="w-full h-full object-cover rounded-2xl"
-                                    >
+                        <div class="services-card-container">
+                            <div class="bg-white serv-card">
+                                <div class="img">
+                                    <img src="./images/platform.webp" alt="">
+                                </div>
+                                    <h3>تصميم وبرمجة المواقع</h3>
+                                <div class="info">
+                                    <a href="#">التفاصيل</a>
                                 </div>
                             </div>
-                            <div class="py-[15px] px-5 pb-8">
-                                <div>
-                                    <h4 class="text-[18px] font-semibold text-[#f1556b] mb-[15px]">تطوير وبرمجة المواقع الالكترونية</h4>
-                                    <p class="text-[15px] font-normal text-[#5b586e]">
-                                        تصميم مواقع تعريفية مخصصة للشركات في السعودية، تساعد على إبراز هوية العلامة التجارية بشكل احترافي.
-                                    </p>
+                            <div class="bg-white serv-card">
+                                <div class="img">
+                                    <img src="./images/technology.webp" alt="">
+                                </div>
+                                    <h3>تصميم وبرمجة التطبيقات</h3>
+                                <div class="info">
+                                    <a href="#">التفاصيل</a>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#" class="block rounded-2xl bg-white shadow-card">
-                            <div class="w-full p-5 pb-[15px]">
-                                <div class="w-full h-[185px] overflow-hidden m-auto">
-                                    <img src="./images/Mobile-UI-UX-bro.svg" alt="website service" 
-                                    class="w-full h-full object-cover rounded-2xl"
-                                    >
+                            <div class="bg-white serv-card">
+                                <div class="img">
+                                    <img src="./images/managedserver.webp" alt="">
+                                </div>
+                                    <h3>تصميم الهوية التجارية</h3>
+                                <div class="info">
+                                    <a href="#">التفاصيل</a>
                                 </div>
                             </div>
-                            <div class="py-[15px] px-5 pb-8">
-                                <div>
-                                    <h4 class="text-[18px] font-semibold text-[#f1556b] mb-[15px]">تطوير وبرمجة تطبيقات الهاتف</h4>
-                                    <p class="text-[15px] font-normal text-[#5b586e]">
-                                        تصميم مواقع تعريفية مخصصة للشركات في السعودية، تساعد على إبراز هوية العلامة التجارية بشكل احترافي.
-                                    </p>
+                            <div class="bg-white serv-card">
+                                <div class="img">
+                                    <img src="./images/marketing.webp" alt="">
+                                </div>
+                                    <h3>التسويق الالكتروني</h3>
+                                <div class="info">
+                                    <a href="#">التفاصيل</a>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#" class="block rounded-2xl bg-white shadow-card">
-                            <div class="w-full p-5 pb-[15px]">
-                                <div class="w-full h-[185px] overflow-hidden m-auto">
-                                    <img src="./images/Website-Creator-bro.svg" alt="website service" 
-                                    class="w-full h-full object-cover rounded-2xl"
-                                    >
-                                </div>
-                            </div>
-                            <div class="py-[15px] px-5 pb-8">
-                                <div>
-                                    <h4 class="text-[18px] font-semibold text-[#f1556b] mb-[15px]">تصميم الهوية التجارية</h4>
-                                    <p class="text-[15px] font-normal text-[#5b586e]">
-                                        تصميم مواقع تعريفية مخصصة للشركات في السعودية، تساعد على إبراز هوية العلامة التجارية بشكل احترافي.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="block rounded-2xl bg-white shadow-card">
-                            <div class="w-full p-5 pb-[15px]">
-                                <div class="w-full h-[185px] overflow-hidden m-auto">
-                                    <img src="./images/Marketing-consulting-pana.svg" alt="website service" 
-                                    class="w-full h-full object-cover rounded-2xl"
-                                    >
-                                </div>
-                            </div>
-                            <div class="py-[15px] px-5 pb-8">
-                                <div>
-                                    <h4 class="text-[18px] font-semibold text-[#f1556b] mb-[15px]">التسويق الالكتروني</h4>
-                                    <p class="text-[15px] font-normal text-[#5b586e]">
-                                        تصميم مواقع تعريفية مخصصة للشركات في السعودية، تساعد على إبراز هوية العلامة التجارية بشكل احترافي.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-
+                        </div>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- section 4 steps to our service with client  -->
+
+
+        <section class="py-20 px-3 bg-white min-h-dvh sm:px-0">
+            <div class="container">
+                <div>
+                    <div class="mb-12">
+                        <h2 class="text-2xl font-bold relative section-title pb-5 w-fit">مراحل العمل</h2>
+                        <p></p>
+                    </div>
+        
+                    <div class="steps-work-container w-full overflow-x-auto">
+                        <div class="swiper">
+                            <div class="flex flex-nowrap swiper-wrapper" id="steps-work-card-container">
+                                
+                                <div class="relative swiper-slide">
+                                    <div class="w-full text-center relative h-[118px] step-card-header flex flex-col justify-between items-center">
+                                        <p class="text-[#f1556b] relative pt-3.5 text-[1.2rem] font-medium">الخطوة الاولى</p>
+                                        <div class="w-10 h-10 rounded-full fill-white flex items-center justify-center bg-[#f1556b] relative bottom-[27%]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg>
+                                        </div>
+                                        <span class="triangle"></span>
+                                    </div>
+                                    <div class="w-full px-2.5 bg-transparent">
+                                        <div class="step-card relative w-full bg-[#f9f9f9] rounded-lg border border-solid border-[#f1556b] overflow-hidden">
+                                            <div class="text-[17px] text-white bg-[#f1556b] w-full h-[87px] flex items-center justify-center">
+                                                <h3>الإجتماع مع العميل</h3>
+                                            </div>
+                                            <div class="">
+                                                <div class="w-full h-[224px] overflow-hidden">
+                                                    <img src="./images/1-comedia-ae.webp" alt="" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="text-[15px] overflow-hidden p-3.5">
+                                                    <p>يجتمع فريقنا مع العميل لتنسيق الأفكار وترتيبها مع عرض الأمثلة والمقترحات</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="relative swiper-slide">
+                                    <div class="w-full text-center relative h-[118px] step-card-header flex flex-col justify-between items-center">
+                                        <p class="text-[#f1556b] relative pt-3.5 text-[1.2rem] font-medium">الخطوة الثانية</p>
+                                        <div class="w-10 h-10 rounded-full fill-white flex items-center justify-center bg-[#f1556b] relative bottom-[27%]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 576 512"><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-19.3c-2.7 1.1-5.4 2-8.2 2.7l-60.1 15c-3 .7-6 1.2-9 1.4c-.9 .1-1.8 .2-2.7 .2l-64 0c-6.1 0-11.6-3.4-14.3-8.8l-8.8-17.7c-1.7-3.4-5.1-5.5-8.8-5.5s-7.2 2.1-8.8 5.5l-8.8 17.7c-2.9 5.9-9.2 9.4-15.7 8.8s-12.1-5.1-13.9-11.3L144 381l-9.8 32.8c-6.1 20.3-24.8 34.2-46 34.2L80 448c-8.8 0-16-7.2-16-16s7.2-16 16-16l8.2 0c7.1 0 13.3-4.6 15.3-11.4l14.9-49.5c3.4-11.3 13.8-19.1 25.6-19.1s22.2 7.8 25.6 19.1l11.6 38.6c7.4-6.2 16.8-9.7 26.8-9.7c15.9 0 30.4 9 37.5 23.2l4.4 8.8 8.9 0c-3.1-8.8-3.7-18.4-1.4-27.8l15-60.1c2.8-11.3 8.6-21.5 16.8-29.7L384 203.6l0-43.6-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM549.8 139.7c-15.6-15.6-40.9-15.6-56.6 0l-29.4 29.4 71 71 29.4-29.4c15.6-15.6 15.6-40.9 0-56.6l-14.4-14.4zM311.9 321c-4.1 4.1-7 9.2-8.4 14.9l-15 60.1c-1.4 5.5 .2 11.2 4.2 15.2s9.7 5.6 15.2 4.2l60.1-15c5.6-1.4 10.8-4.3 14.9-8.4L512.1 262.7l-71-71L311.9 321z"/></svg>
+                                        </div>
+                                        <span class="triangle"></span>
+                                    </div>
+                                    <div class="w-full px-2.5 bg-transparent">
+                                        <div class="step-card relative w-full bg-[#f9f9f9] rounded-lg border border-solid border-[#f1556b] overflow-hidden">
+                                            <div class="text-[17px] text-white bg-[#f1556b] w-full h-[87px] flex items-center justify-center">
+                                                <h3>تقديم العرض الفني والمالي</h3>
+                                            </div>
+                                            <div class="">
+                                                <div class="w-full h-[224px] overflow-hidden">
+                                                    <img src="./images/2-comedia-ae.webp" alt="" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="text-[15px] overflow-hidden p-3.5">
+                                                    <p>نقدم للعميل العقد وخطوات العمل المتفق عليها بشكلها التفصيلي</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="relative swiper-slide">
+                                    <div class="w-full text-center relative h-[118px] step-card-header flex flex-col justify-between items-center">
+                                        <p class="text-[#f1556b] relative pt-3.5 text-[1.2rem] font-medium">الخطوة الثالثة</p>
+                                        <div class="w-10 h-10 rounded-full fill-white flex items-center justify-center bg-[#f1556b] relative bottom-[27%]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 512 512"><path d="M64 32C28.7 32 0 60.7 0 96l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 32zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 288zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                                        </div>
+                                        <span class="triangle"></span>
+                                    </div>
+                                    <div class="w-full px-2.5 bg-transparent">
+                                        <div class="step-card relative w-full bg-[#f9f9f9] rounded-lg border border-solid border-[#f1556b] overflow-hidden">
+                                            <div class="text-[17px] text-white bg-[#f1556b] w-full h-[87px] flex items-center justify-center">
+                                                <h3>حجز السيرفرات</h3>
+                                            </div>
+                                            <div class="">
+                                                <div class="w-full h-[224px] overflow-hidden">
+                                                    <img src="./images/3-comedia-ae.webp" alt="" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="text-[15px] overflow-hidden p-3.5">
+                                                    <p>نبدء في تجهيز السيرفر والنطاقات مع تثبيت الحماية الكاملة</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="relative swiper-slide">
+                                    <div class="w-full text-center relative h-[118px] step-card-header flex flex-col justify-between items-center">
+                                        <p class="text-[#f1556b] relative pt-3.5 text-[1.2rem] font-medium">الخطوة الرابعة</p>
+                                        <div class="w-10 h-10 rounded-full fill-white flex items-center justify-center bg-[#f1556b] relative bottom-[27%]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 576 512"><path d="M339.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L568.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S517.7-4.4 499.1 9.6L262.4 187.2c-24 18-38.2 46.1-38.4 76.1L339.3 367.1zm-19.6 25.4l-116-104.4C143.9 290.3 96 339.6 96 400c0 3.9 .2 7.8 .6 11.6C98.4 429.1 86.4 448 68.8 448L64 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg>
+                                        </div>
+                                        <span class="triangle"></span>
+                                    </div>
+                                    <div class="w-full px-2.5 bg-transparent">
+                                        <div class="step-card relative w-full bg-[#f9f9f9] rounded-lg border border-solid border-[#f1556b] overflow-hidden">
+                                            <div class="text-[17px] text-white bg-[#f1556b] w-full h-[87px] flex items-center justify-center">
+                                                <h3>التصاميم الأولية للتطبيق</h3>
+                                            </div>
+                                            <div class="">
+                                                <div class="w-full h-[224px] overflow-hidden">
+                                                    <img src="./images/4-comedia-ae.webp" alt="" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="text-[15px] overflow-hidden p-3.5">
+                                                    <p>نقدم تصاميم التطبيق للعميل مع مراعات التعديلات ومن ثم الموافقة</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="relative swiper-slide">
+                                    <div class="w-full text-center relative h-[118px] step-card-header flex flex-col justify-between items-center">
+                                        <p class="text-[#f1556b] relative pt-3.5 text-[1.2rem] font-medium">الخطوة الخامسة</p>
+                                        <div class="w-10 h-10 rounded-full fill-white flex items-center justify-center bg-[#f1556b] relative bottom-[27%]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+                                        </div>
+                                        <span class="triangle"></span>
+                                    </div>
+                                    <div class="w-full px-2.5 bg-transparent">
+                                        <div class="step-card relative w-full bg-[#f9f9f9] rounded-lg border border-solid border-[#f1556b] overflow-hidden">
+                                            <div class="text-[17px] text-white bg-[#f1556b] w-full h-[87px] flex items-center justify-center">
+                                                <h3>البدء بالبرمجة</h3>
+                                            </div>
+                                            <div class="">
+                                                <div class="w-full h-[224px] overflow-hidden">
+                                                    <img src="./images/5-comedia-ae.webp" alt="" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="text-[15px] overflow-hidden p-3.5">
+                                                    <p>نبدء في برمجة لوحات التحكم والتطبيق مع ربط التصميم الذي وافق عليه العميل</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="relative swiper-slide">
+                                    <div class="w-full text-center relative h-[118px] step-card-header flex flex-col justify-between items-center">
+                                        <p class="text-[#f1556b] relative pt-3.5 text-[1.2rem] font-medium">الخطوة السادسة</p>
+                                        <div class="w-10 h-10 rounded-full fill-white flex items-center justify-center bg-[#f1556b] relative bottom-[27%]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 384 512"><path d="M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64L80 64l0 320 224 0 0-320z"/></svg>
+                                        </div>
+                                        <span class="triangle"></span>
+                                    </div>
+                                    <div class="w-full px-2.5 bg-transparent">
+                                        <div class="step-card relative w-full bg-[#f9f9f9] rounded-lg border border-solid border-[#f1556b] overflow-hidden">
+                                            <div class="text-[17px] text-white bg-[#f1556b] w-full h-[87px] flex items-center justify-center">
+                                                <h3>تجربة واختبار التطبيق</h3>
+                                            </div>
+                                            <div class="">
+                                                <div class="w-full h-[224px] overflow-hidden">
+                                                    <img src="./images/6-comedia-ae.webp" alt="" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="text-[15px] overflow-hidden p-3.5">
+                                                    <p>يتم اختبار التطبيق قبل النشر بشكل تفصيلي وكامل على كافة الأجهزة</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative swiper-slide">
+                                    <div class="w-full text-center relative h-[118px] step-card-header flex flex-col justify-between items-center">
+                                        <p class="text-[#f1556b] relative pt-3.5 text-[1.2rem] font-medium">الخطوة السابعة</p>
+                                        <div class="w-10 h-10 rounded-full fill-white flex items-center justify-center bg-[#f1556b] relative bottom-[27%]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 512 512"><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9L381.7 53c-48 48-113.1 75-181 75l-8.7 0-32 0-96 0c-35.3 0-64 28.7-64 64l0 96c0 35.3 28.7 64 64 64l0 128c0 17.7 14.3 32 32 32l64 0c17.7 0 32-14.3 32-32l0-128 8.7 0c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-147.6c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4L480 32zm-64 76.7L416 240l0 131.3C357.2 317.8 280.5 288 200.7 288l-8.7 0 0-96 8.7 0c79.8 0 156.5-29.8 215.3-83.3z"/></svg>
+                                        </div>
+                                        <span class="triangle"></span>
+                                    </div>
+                                    <div class="w-full px-2.5 bg-transparent">
+                                        <div class="step-card relative w-full bg-[#f9f9f9] rounded-lg border border-solid border-[#f1556b] overflow-hidden">
+                                            <div class="text-[17px] text-white bg-[#f1556b] w-full h-[87px] flex items-center justify-center">
+                                                <h3>النشر بالمتاجر</h3>
+                                            </div>
+                                            <div class="">
+                                                <div class="w-full h-[224px] overflow-hidden">
+                                                    <img src="./images/7-comedia-ae.webp" alt="" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="text-[15px] overflow-hidden p-3.5">
+                                                    <p>نشر التطبيق في المتاجر الإلكترونية Google Play, App Store</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative swiper-slide">
+                                    <div class="w-full text-center relative h-[118px] step-card-header flex flex-col justify-between items-center">
+                                        <p class="text-[#f1556b] relative pt-3.5 text-[1.2rem] font-medium">الخطوة الثامنة</p>
+                                        <div class="w-10 h-10 rounded-full fill-white flex items-center justify-center bg-[#f1556b] relative bottom-[27%]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 640 512"><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM625 177L497 305c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L591 143c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                                        </div>
+                                        <span class="triangle"></span>
+                                    </div>
+                                    <div class="w-full px-2.5 bg-transparent">
+                                        <div class="step-card relative w-full bg-[#f9f9f9] rounded-lg border border-solid border-[#f1556b] overflow-hidden">
+                                            <div class="text-[17px] text-white bg-[#f1556b] w-full h-[87px] flex items-center justify-center">
+                                                <h3>تدريب العميل</h3>
+                                            </div>
+                                            <div class="">
+                                                <div class="w-full h-[224px] overflow-hidden">
+                                                    <img src="./images/8-comedia-ae.webp" alt="" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="text-[15px] overflow-hidden p-3.5">
+                                                    <p>يتم تدريب العميل على إدارة التطبيق ولوحة التحكم, متضمن فيديو مُسجل</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative swiper-slide">
+                                    <div class="w-full text-center relative h-[118px] step-card-header flex flex-col justify-between items-center">
+                                        <p class="text-[#f1556b] relative pt-3.5 text-[1.2rem] font-medium">الخطوة التاسعة</p>
+                                        <div class="w-10 h-10 rounded-full fill-white flex items-center justify-center bg-[#f1556b] relative bottom-[27%]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 512 512"><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17l0 80c0 13.3 10.7 24 24 24l80 0c13.3 0 24-10.7 24-24l0-40 40 0c13.3 0 24-10.7 24-24l0-40 40 0c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/></svg>
+                                        </div>
+                                        <span class="triangle"></span>
+                                    </div>
+                                    <div class="w-full px-2.5 bg-transparent">
+                                        <div class="step-card relative w-full bg-[#f9f9f9] rounded-lg border border-solid border-[#f1556b] overflow-hidden">
+                                            <div class="text-[17px] text-white bg-[#f1556b] w-full h-[87px] flex items-center justify-center">
+                                                <h3>تسليم المشروع</h3>
+                                            </div>
+                                            <div class="">
+                                                <div class="w-full h-[224px] overflow-hidden">
+                                                    <img src="./images/9-comedia-ae.webp" alt="" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="text-[15px] overflow-hidden p-3.5">
+                                                    <p>يتم تسليم كافة ملفات المشروع الخاصة بالتطبيق (ملكية كاملة)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative swiper-slide">
+                                    <div class="w-full text-center relative h-[118px] step-card-header flex flex-col justify-between items-center">
+                                        <p class="text-[#f1556b] relative pt-3.5 text-[1.2rem] font-medium">الخطوة الاخيرة</p>
+                                        <div class="w-10 h-10 rounded-full fill-white flex items-center justify-center bg-[#f1556b] relative bottom-[27%]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50%" height=-50% viewBox="0 0 640 512"><path d="M256 64l128 0 0 64-128 0 0-64zM240 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l48 0 0 32L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 256 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-256 0 0-32 48 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48L240 0zM96 448l0-64 128 0 0 64L96 448zm320-64l128 0 0 64-128 0 0-64z"/></svg>
+                                        </div>
+                                        <span class="triangle"></span>
+                                    </div>
+                                    <div class="w-full px-2.5 bg-transparent">
+                                        <div class="step-card relative w-full bg-[#f9f9f9] rounded-lg border border-solid border-[#f1556b] overflow-hidden">
+                                            <div class="text-[17px] text-white bg-[#f1556b] w-full h-[87px] flex items-center justify-center">
+                                                <h3>التسويق والإدارة</h3>
+                                            </div>
+                                            <div class="">
+                                                <div class="w-full h-[224px] overflow-hidden">
+                                                    <img src="./images/10-comedia-ae.webp" alt="" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="text-[15px] overflow-hidden p-3.5">
+                                                    <p>نقدم عروض ,واستشارات لتسويق التطبيق, مع خدمات الإدارة الكاملة</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
+        
+                            </div>
+        
+        
+                             <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+                <svg width="100%" height="100%" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m19 4-8 8 8 8"></path>
+                    <path d="m13 4-8 8 8 8"></path>
+                  </svg>
+            </div>
+            <div class="swiper-button-next">
+                  <svg width="100%" height="100%" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m5 4 8 8-8 8"></path>
+                    <path d="m11 4 8 8-8 8"></path>
+                  </svg>
+            </div>
+        
+        
+                        </div>
+                    </div>
+        
                 </div>
             </div>
         </section>
