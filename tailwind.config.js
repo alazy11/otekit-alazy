@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     './index.html',
-    // './card.html'
+    // './card.html' 
   ],
   theme: {
     extend: {},
