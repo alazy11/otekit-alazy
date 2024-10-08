@@ -148,7 +148,7 @@ breakpoints: {
 const swiperClients = new Swiper('.swiperClients', {
 
     slidesPerView: 2,
-    spaceBetween: 20,
+    spaceBetween: 5,
     grabCursor: true,
     loop:true,
     autoplay: {
@@ -165,7 +165,7 @@ breakpoints: {
 
   768: {
     slidesPerView: 4,
-    // spaceBetween: 0
+    spaceBetween: 20
   },
 
   // when window width is >= 991px
