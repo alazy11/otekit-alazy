@@ -546,7 +546,10 @@ color: #f71938;
     background-image: url('../images/motpath-w2.svg');
     background-size: 250px;
 }
-
+.top-clients-card {
+    display: flex;
+    justify-content: center;
+}
 /* //* /////////////////////////////////////// */
 .circular-progress {
     --progress:50;
